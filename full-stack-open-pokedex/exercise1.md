@@ -1,6 +1,5 @@
 Ive chosen Python as it's the first language I picked up taking an online course
  
- 
 Linting:
 Interesting options from an article here https://realpython.com/python-code-quality/
 They range from Logical, Stylistic, Analytical or all. Stylistic meaning that there is formatting for style which is perfect for readability, although this is less of an issue in Python than Javascript. Logical meaning syntax and error checking is implemented, similar to how Eslint is used for Javascript. Analytical seems to be a metric thing, checking for complexity and other things.
