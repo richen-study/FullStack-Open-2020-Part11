@@ -13,6 +13,8 @@ jobs:
       - uses: "actions/setup-node@v1"
         with: 
             node-version: '12.x'
+      - name : testing directory list
+        run: ls
       - name: npm install
         run: npm install
       - name: lint
