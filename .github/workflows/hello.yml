@@ -16,7 +16,6 @@ jobs:
       - name: Now it is
         run: 
           date
-      - name: Directory content /full-stack-open-pokedex
+      - name: Directory content 
         run: 
-          cd /full-stack-open-pokedex
           ls -l
