@@ -1,4 +1,3 @@
-
 name: Hello World!
 
 on:
@@ -11,12 +10,8 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Say hello
-        run: 
-          echo "Hello World!"
+        run: echo "Hello World!"
       - name: Now it is
-        run: 
-          date
-      - name: Directory content 
-        working-directory: ./full-stack-open-pokedex
-        run: 
-          ls -l
+        run: date
+      - name: Directory content
+        run: ls -l
