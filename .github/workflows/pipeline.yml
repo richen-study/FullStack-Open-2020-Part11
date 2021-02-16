@@ -7,18 +7,22 @@ on:
 
 jobs:
   simple_deployment_pipeline:
-      runs-on: "ubuntu-18.04" 
-      defaults:
-        run:
-          working-directory: ./full-stack-open-pokedex
-      steps: 
+    runs-on: "ubuntu-18.04"
+    defaults:
+      run:
+        working-directory: ./full-stack-open-pokedex
+    steps:
       - uses: "actions/checkout@v2"
       - uses: "actions/setup-node@v1"
-        with: 
-            node-version: '12.x'
-      - name : testing directory list
+        with:
+          node-version: "12.x"
+      - name: testing directory list
         run: ls
       - name: npm install
         run: npm install
       - name: lint
         run: npm run eslint
+      - name: build
+        run: npm run build
+      - name: test
+        run: npm run test
