@@ -11,5 +11,12 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Say hello
-        run: |
+        run: 
           echo "Hello World!"
+      - name: Now it is
+        run: 
+          date
+      - name: Directory content /full-stack-open-pokedex
+        run: 
+          cd /full-stack-open-pokedex
+          ls -l
