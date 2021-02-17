@@ -62,4 +62,5 @@ jobs:
           DEFAULT_BUMP: patch
           INITIAL_VERSION: 1.0.0
           SOURCE: ./full-stack-open-pokedex
+          WITH_V: true
         if: ${{ github.event_name == 'push' }}
