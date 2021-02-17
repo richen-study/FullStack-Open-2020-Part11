@@ -38,12 +38,13 @@ jobs:
         with:
           appdir: ./full-stack-open-pokedex
           # This will be used for authentication. You can find it in your heroku homepage account settings
-          heroku_api_key: 
-          # Email that you use with heroku
+          heroku_api_key:
+            # Email that you use with heroku
             ${{secrets.HEROKU_API_KEY}}
-          heroku_email: 
-            richardhenninger@live.com
-          heroku_app_name: 
-          # An optional buildpack to use when creating the heroku application
-          #adding a comment for changes
+          heroku_email: richardhenninger@live.com
+          heroku_app_name:
+            # An optional buildpack to use when creating the heroku application
             richen-fso2020-pokedex
+          healthcheck: "https://richen-fso2020-pokedex.herokuapp.com/health"
+          checkstring: "ok"
+          delay: 5
