@@ -48,3 +48,4 @@ jobs:
           healthcheck: "https://richen-fso2020-pokedex.herokuapp.com/health"
           checkstring: "ok"
           delay: 5
+          rollbackonhealthcheckfailed: true
