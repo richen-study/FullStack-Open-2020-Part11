@@ -1,9 +1,8 @@
 name: Scheduled Ping Health Check
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "* * 1 * *"
 
 jobs:
   healthcheck:
