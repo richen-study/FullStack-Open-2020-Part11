@@ -32,14 +32,14 @@ jobs:
       - name: test
         run: npm run test
       - name: e2e tests
-        uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v2
         with:
           working-directory: ./full-stack-open-pokedex
           command: npm run test:e2e
           start: npm run start-prod
           wait-on: http://localhost:5000
       - name: Deploy to Heroku
-        uses: AkhileshNS/heroku-deploy@v3.11.10
+      - uses: AkhileshNS/heroku-deploy@v3.11.10
         with:
           appdir: ./full-stack-open-pokedex
           # This will be used for authentication. You can find it in your heroku homepage account settings
