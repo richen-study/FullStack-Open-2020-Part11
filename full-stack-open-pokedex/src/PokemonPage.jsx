@@ -13,8 +13,6 @@ const PokemonPage = ({ previous, next }) => {
     `https://pokeapi.co/api/v2/pokemon/${name}`
   )
 
-  console.log(name)
-
   if (isLoading) {
     return <LoadingSpinner />
   }
